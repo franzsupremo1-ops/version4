@@ -24,7 +24,7 @@ namespace Infrastructure.Repositorios
             return await _appDbContext.aguas.ToListAsync();
         }
 
-        public async Task<Agua> ObtenerId(Guid id)  // ← AGREGAR ESTE MÉTODO
+        public async Task<Agua> ObtenerId(Guid id)  
         {
             return await _appDbContext.aguas.FindAsync(id);
         }
